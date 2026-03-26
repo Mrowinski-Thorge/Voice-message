@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "VoiceNote",
-    "slug": "voiceanalyzer",
+    "slug": "voice-message",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
