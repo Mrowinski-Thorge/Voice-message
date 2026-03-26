@@ -5,13 +5,13 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
-    "icon": "./assets/icon.png",
+    "icon": "./icon.png",
     "splash": {
       "backgroundColor": "#0A0A0F"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./adaptive-icon.png",
         "backgroundColor": "#0A0A0F"
       },
       "package": "com.thorge.voicenote",
