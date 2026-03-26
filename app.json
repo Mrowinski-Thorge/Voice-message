@@ -6,10 +6,10 @@
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "icon": "./icon.png",
+    "scheme": "voicenote",
     "splash": {
       "backgroundColor": "#0A0A0F"
     },
-    "scheme": "voicenote",
     "android": {
       "package": "com.thorge.voicenote",
       "versionCode": 1,
@@ -26,6 +26,7 @@
       [
         "expo-share-intent",
         {
+          "disableIOS": true,
           "androidIntentFilters": ["audio/*"]
         }
       ],
