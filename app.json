@@ -10,6 +10,11 @@
     "splash": {
       "backgroundColor": "#0A0A0F"
     },
+    "extra": {
+      "eas": {
+        "projectId": "88cab564-1003-4e1d-88db-9acae7f5e6a9"
+      }
+    },
     "android": {
       "package": "com.thorge.voicenote",
       "versionCode": 1,
