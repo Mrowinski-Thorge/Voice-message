@@ -9,12 +9,14 @@
     "splash": {
       "backgroundColor": "#0A0A0F"
     },
+    "scheme": "voicenote",
     "android": {
+      "package": "com.thorge.voicenote",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./adaptive-icon.png",
         "backgroundColor": "#0A0A0F"
       },
-      "package": "com.thorge.voicenote",
       "permissions": [
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.READ_MEDIA_AUDIO"
@@ -24,10 +26,7 @@
       [
         "expo-share-intent",
         {
-          "androidIntentFilters": ["audio/*", "application/octet-stream"],
-          "androidMainActivityAttributes": {
-            "android:launchMode": "singleTask"
-          }
+          "androidIntentFilters": ["audio/*"]
         }
       ],
       [
@@ -40,7 +39,6 @@
           }
         }
       ]
-    ],
-    "scheme": "voicenote"
+    ]
   }
 }
