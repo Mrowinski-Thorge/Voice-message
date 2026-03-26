@@ -12,7 +12,7 @@
     "expo-status-bar": "~1.12.1",
     "expo-file-system": "~17.0.1",
     "expo-build-properties": "~0.12.1",
-    "expo-share-intent": "^3.1.0",
+    "expo-share-intent": "^1.2.2",
     "react": "18.2.0",
     "react-native": "0.74.5",
     "@react-native-async-storage/async-storage": "1.23.1",
