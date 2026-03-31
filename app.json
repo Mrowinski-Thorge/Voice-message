@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "VoiceNote",
+    "slug": "voice-message",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "icon": "./icon.png",
+    "scheme": "voicenote",
+    "splash": {
+      "backgroundColor": "#0B0E11"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "DEINE-PROJECT-ID-HIER"
+      }
+    },
+    "android": {
+      "package": "com.thorge.voicenote",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./adaptive-icon.png",
+        "backgroundColor": "#0B0E11"
+      },
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_AUDIO"
+      ],
+      "intentFilters": [
+        {
+          "action": "SEND",
+          "category": ["DEFAULT"],
+          "data": [{ "mimeType": "audio/*" }]
+        },
+        {
+          "action": "SEND",
+          "category": ["DEFAULT"],
+          "data": [{ "mimeType": "application/octet-stream" }]
+        }
+      ]
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 24,
+            "buildToolsVersion": "34.0.0"
+          }
+        }
+      ]
+    ]
+  }
+}
