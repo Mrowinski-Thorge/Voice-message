@@ -1,8 +1,9 @@
-name: Build Android APK
+name: Build Gemini Studio APK
 
 on:
   push:
     branches: [main]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -22,12 +23,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install Expo CLI
-        run: npm install -g expo-cli @expo/cli
-
       - uses: expo/expo-github-action@v8
         with:
           expo-version: latest
+          eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
       - name: Prebuild
@@ -39,5 +38,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: VoiceNote-APK
+          name: GeminiStudio-APK
           path: android/app/build/outputs/apk/release/app-release.apk
