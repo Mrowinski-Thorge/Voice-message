@@ -1,42 +1,29 @@
 {
   "expo": {
-    "name": "VoiceNote",
-    "slug": "voice-message",
+    "name": "Gemini Studio",
+    "slug": "gemini-studio",
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "automatic",
     "icon": "./icon.png",
-    "scheme": "voicenote",
+    "scheme": "geministudio",
     "splash": {
-      "backgroundColor": "#0B0E11"
+      "backgroundColor": "#07090d"
     },
     "extra": {
       "eas": {
-        "projectId": "DEINE-PROJECT-ID-HIER"
+        "projectId": "DEINE-EAS-PROJECT-ID-HIER"
       }
     },
     "android": {
-      "package": "com.thorge.voicenote",
+      "package": "com.thorge.geministudio",
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./adaptive-icon.png",
-        "backgroundColor": "#0B0E11"
+        "backgroundColor": "#07090d"
       },
       "permissions": [
-        "android.permission.READ_EXTERNAL_STORAGE",
-        "android.permission.READ_MEDIA_AUDIO"
-      ],
-      "intentFilters": [
-        {
-          "action": "SEND",
-          "category": ["DEFAULT"],
-          "data": [{ "mimeType": "audio/*" }]
-        },
-        {
-          "action": "SEND",
-          "category": ["DEFAULT"],
-          "data": [{ "mimeType": "application/octet-stream" }]
-        }
+        "android.permission.INTERNET"
       ]
     },
     "plugins": [
@@ -53,4 +40,3 @@
       ]
     ]
   }
-}
